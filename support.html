@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FrameFold — Support &amp; FAQ</title>
+  <meta name="theme-color" content="#090a0f">
+  <link rel="icon" type="image/png" href="./assets/app-icon.png">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body data-page="support">
+  <div class="ambient-bg" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <div class="container nav-inner">
+      <a class="brand" href="./index.html">
+        <img src="./assets/app-icon.png" alt="FrameFold">
+        <span>FrameFold</span>
+        <span class="brand-badge">iOS 18+</span>
+      </a>
+
+      <nav class="nav-links" aria-label="Main navigation">
+        <a href="./index.html" data-i18n="nav_overview">Overview</a>
+        <a href="./privacy.html" data-i18n="nav_privacy">Privacy Policy</a>
+        <a href="./terms.html" data-i18n="nav_terms">Terms of Use</a>
+        <a class="active" href="./support.html" data-i18n="nav_support">Support</a>
+      </nav>
+
+      <div class="lang-picker-wrap">
+        <label for="lang-select" data-i18n="lang_label">Language</label>
+        <select id="lang-select" class="lang-select" aria-label="Language"></select>
+      </div>
+    </div>
+  </header>
+
+  <main class="container doc-shell">
+    <article class="glass-card doc-card">
+      <h1 data-i18n="supp_title">Support &amp; Frequently Asked Questions</h1>
+      <div class="doc-meta" data-i18n="supp_meta">Email Support: support@binego.com • On-Device iOS Studio</div>
+
+      <div class="doc-section" style="border-top:none;margin-top:0;padding-top:0;">
+        <h2 data-i18n="supp_q1_t">How do I free storage immediately after compression?</h2>
+        <p data-i18n="supp_q1_p">For safety, iOS moves replaced originals into the Apple Photos Recently Deleted album for 30 days. Open Apple Photos → Collections → Utilities → Recently Deleted → Select → Delete All to reclaim that space right away.</p>
+      </div>
+
+      <div class="doc-section">
+        <h2 data-i18n="supp_q2_t">How do I restore my Lifetime Pro purchase?</h2>
+        <p data-i18n="supp_q2_p">Open FrameFold → Ledger tab (or Paywall) and tap Restore Purchases. Ensure you are signed into the same Apple Account used for the original purchase.</p>
+      </div>
+
+      <div class="doc-section">
+        <h2 data-i18n="supp_q3_t">Can I give FrameFold access to specific photos only?</h2>
+        <p data-i18n="supp_q3_p">Yes. Choose Select Photos when granting Photo Library permission, then use the Manage Selected Media button inside Studio or Live Photo Studio anytime to add or remove items.</p>
+      </div>
+
+      <div class="doc-section">
+        <h2 data-i18n="supp_q4_t">Why are iCloud-only videos skipped?</h2>
+        <p data-i18n="supp_q4_p">Because FrameFold is 100% offline-first and avoids hidden cellular data charges, videos stored only in iCloud are skipped until downloaded locally in Apple Photos.</p>
+      </div>
+
+      <div class="doc-section">
+        <h2 data-i18n="supp_q5_t">Need Direct Assistance?</h2>
+        <p data-i18n="supp_q5_p">Write to us anytime with your iOS version and issue details: support@binego.com</p>
+        <div style="margin-top:14px;">
+          <a class="btn btn-primary" href="mailto:support@binego.com?subject=FrameFold%20iOS%20Support" data-i18n="supp_email_btn">Contact Support</a>
+        </div>
+      </div>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-links">
+        <a href="./index.html" data-i18n="nav_overview">Overview</a>
+        <a href="./privacy.html" data-i18n="nav_privacy">Privacy Policy</a>
+        <a href="./terms.html" data-i18n="nav_terms">Terms of Use</a>
+        <a href="./support.html" data-i18n="nav_support">Support</a>
+      </div>
+      <div class="footer-copy" data-i18n="footer_copy">© 2026 FrameFold (binego). All on-device media stays yours.</div>
+    </div>
+  </footer>
+
+  <script src="./i18n.js"></script>
+</body>
+</html>

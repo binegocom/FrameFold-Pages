@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FrameFold — 10-Bit HEVC Video &amp; Lossless Live Photo Studio</title>
+  <meta name="description" content="Reclaim gigabytes of iPhone storage without deleting a single memory. Hardware 10-bit HEVC compression and lossless Live Photo studio — 100% on-device.">
+  <meta name="theme-color" content="#090a0f">
+  <link rel="icon" type="image/png" href="./assets/app-icon.png">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body data-page="home">
+  <div class="ambient-bg" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <div class="container nav-inner">
+      <a class="brand" href="./index.html">
+        <img src="./assets/app-icon.png" alt="FrameFold">
+        <span>FrameFold</span>
+        <span class="brand-badge">iOS 18+</span>
+      </a>
+
+      <nav class="nav-links" aria-label="Main navigation">
+        <a class="active" href="./index.html" data-i18n="nav_overview">Overview</a>
+        <a href="./privacy.html" data-i18n="nav_privacy">Privacy Policy</a>
+        <a href="./terms.html" data-i18n="nav_terms">Terms of Use</a>
+        <a href="./support.html" data-i18n="nav_support">Support</a>
+      </nav>
+
+      <div class="lang-picker-wrap">
+        <label for="lang-select" data-i18n="lang_label">Language</label>
+        <select id="lang-select" class="lang-select" aria-label="Language"></select>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div>
+        <div class="eyebrow" data-i18n="hero_eyebrow">100% ON-DEVICE • APPLE SILICON HEVC</div>
+        <h1 data-i18n="hero_title">Reclaim gigabytes without deleting a single memory.</h1>
+        <p class="hero-sub" data-i18n="hero_sub">Hardware-accelerated 10-bit HEVC compression, 3-second synced quality comparison, and lossless Live Photo optimization — running completely offline on your iPhone.</p>
+
+        <div class="cta-row">
+          <a class="btn btn-primary" href="#features" data-i18n="cta_explore">Explore Studio Engine</a>
+          <a class="btn btn-secondary" href="./privacy.html" data-i18n="cta_privacy">On-Device Privacy Guarantee</a>
+        </div>
+
+        <div class="trust-pills">
+          <span class="pill" data-i18n="pill_offline">100% Offline • Zero Cloud Uploads</span>
+          <span class="pill" data-i18n="pill_exif">EXIF, GPS &amp; Albums Intact</span>
+          <span class="pill" data-i18n="pill_nosubs">Lifetime Pro • No Subscriptions</span>
+        </div>
+      </div>
+
+      <aside class="glass-card preview-card" aria-label="Interactive HEVC comparison">
+        <div class="preview-header">
+          <div class="preview-app">
+            <img src="./assets/app-icon.png" alt="FrameFold App Icon">
+            <div>
+              <strong>FrameFold</strong>
+              <div class="mono-tag">VideoToolbox HEVC Main10</div>
+            </div>
+          </div>
+          <span class="pill">-81%</span>
+        </div>
+
+        <div class="split-stage" id="split-stage">
+          <div class="split-side split-before">
+            <span class="metric-chip metric-before" data-i18n="demo_before">ORIGINAL H.264 • 1.80 GB</span>
+            <span class="mono-tag">4K 60fps • 48 Mbps</span>
+          </div>
+          <div class="split-side split-after" id="split-after">
+            <span class="metric-chip metric-after" data-i18n="demo_after">HEVC 10-BIT • 340 MB</span>
+            <span class="mono-tag" style="align-self:flex-end;">Dolby Vision HDR • Bitrate -62%</span>
+          </div>
+          <div class="split-divider" id="split-divider"></div>
+          <div class="split-handle" id="split-handle">&harr;</div>
+        </div>
+
+        <input id="split-range" class="slider-control" type="range" min="10" max="90" value="50" aria-label="Comparison slider">
+
+        <div class="stats-strip">
+          <div class="stat-box">
+            <div class="stat-val">&lt; 250 MB</div>
+            <div class="stat-lbl" data-i18n="stat_ram">Peak RAM Cap</div>
+          </div>
+          <div class="stat-box">
+            <div class="stat-val">30 Days</div>
+            <div class="stat-lbl" data-i18n="stat_recovery">iOS Recovery</div>
+          </div>
+          <div class="stat-box">
+            <div class="stat-val">0 KB</div>
+            <div class="stat-lbl" data-i18n="stat_uploaded">Cloud Upload</div>
+          </div>
+        </div>
+      </aside>
+    </section>
+
+    <section class="section" id="features">
+      <h2 class="section-title" data-i18n="features_title">Built like a native pro studio, not a generic utility</h2>
+      <p class="section-lead" data-i18n="features_lead">Every byte reclaimed comes from genuine hardware video re-encoding or lossless container separation inside Apple frameworks.</p>
+
+      <div class="bento-grid">
+        <article class="glass-card bento-card">
+          <div class="bento-icon">10b</div>
+          <h3 data-i18n="feat1_title">10-Bit HDR Hardware HEVC</h3>
+          <p data-i18n="feat1_desc">Direct AVAssetReader and AVAssetWriter streaming preserves Dolby Vision and HLG HDR tone curves with tight memory control even on huge 4K 60fps clips.</p>
+        </article>
+
+        <article class="glass-card bento-card">
+          <div class="bento-icon emerald">LP</div>
+          <h3 data-i18n="feat2_title">Lossless Live Photo Studio</h3>
+          <p data-i18n="feat2_desc">Separates hidden paired .mov motion tracks cleanly into pure HEIC stills while keeping EXIF camera tags, GPS locations, and albums untouched.</p>
+        </article>
+
+        <article class="glass-card bento-card">
+          <div class="bento-icon amber">3s</div>
+          <h3 data-i18n="feat3_title">Synced Split-Screen Preview</h3>
+          <p data-i18n="feat3_desc">Encode a 3-second test segment first and drag the interactive before/after scrubber to inspect sharpness before touching your full video.</p>
+        </article>
+
+        <article class="glass-card bento-card">
+          <div class="bento-icon">AI</div>
+          <h3 data-i18n="feat4_title">Apple Vision Key Frame Picker</h3>
+          <p data-i18n="feat4_desc">Evaluates candidate frames from Live Photo motion with Apple Vision sharpness and facial clarity scoring right on your device.</p>
+        </article>
+
+        <article class="glass-card bento-card">
+          <div class="bento-icon emerald">30d</div>
+          <h3 data-i18n="feat5_title">Atomic Safe Replacement</h3>
+          <p data-i18n="feat5_desc">Verifies playability and metadata transfer before offering to move originals to iOS Recently Deleted, keeping them recoverable for 30 days.</p>
+        </article>
+
+        <article class="glass-card bento-card">
+          <div class="bento-icon amber">PRO</div>
+          <h3 data-i18n="feat6_title">Lifetime Pro • Zero Ads Offline</h3>
+          <p data-i18n="feat6_desc">No recurring subscription traps. Free tier collapses banners to 0pt whenever offline; Lifetime Pro removes all ads forever.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2 class="section-title" data-i18n="compare_title">Free vs Lifetime Pro</h2>
+      <p class="section-lead" data-i18n="compare_lead">Start reclaiming space immediately with transparent limits or unlock every studio capability with one purchase.</p>
+
+      <div class="glass-card compare-card">
+        <table class="compare-table">
+          <thead>
+            <tr>
+              <th data-i18n="tbl_feature">Capability</th>
+              <th data-i18n="tbl_free">Free</th>
+              <th data-i18n="tbl_pro">Lifetime Pro</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td data-i18n="row1_lbl">Video Batch Queue &amp; Compression</td>
+              <td class="col-free" data-i18n="row1_free">2 / day</td>
+              <td class="col-pro" data-i18n="row_unlimited">Unlimited</td>
+            </tr>
+            <tr>
+              <td data-i18n="row2_lbl">Lossless Live Photo Stripping</td>
+              <td class="col-free" data-i18n="row2_free">10 / day</td>
+              <td class="col-pro" data-i18n="row_unlimited">Unlimited</td>
+            </tr>
+            <tr>
+              <td data-i18n="row3_lbl">Manual Bitrate, FPS &amp; Custom Resolution</td>
+              <td class="col-free" data-i18n="row3_free">Presets</td>
+              <td class="col-pro" data-i18n="row_included">Full Studio</td>
+            </tr>
+            <tr>
+              <td data-i18n="row4_lbl">Apple Vision Sharpest Key Frame Picker</td>
+              <td class="col-free">—</td>
+              <td class="col-pro" data-i18n="row_included">Included</td>
+            </tr>
+            <tr>
+              <td data-i18n="row5_lbl">Offline Privacy &amp; Ad-Free Experience</td>
+              <td class="col-free" data-i18n="row5_free">0pt Offline</td>
+              <td class="col-pro" data-i18n="row5_pro">Always 0 Ads</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-links">
+        <a href="./index.html" data-i18n="nav_overview">Overview</a>
+        <a href="./privacy.html" data-i18n="nav_privacy">Privacy Policy</a>
+        <a href="./terms.html" data-i18n="nav_terms">Terms of Use</a>
+        <a href="./support.html" data-i18n="nav_support">Support</a>
+      </div>
+      <div class="footer-copy" data-i18n="footer_copy">© 2026 FrameFold (binego). All on-device media stays yours.</div>
+    </div>
+  </footer>
+
+  <script src="./i18n.js"></script>
+</body>
+</html>

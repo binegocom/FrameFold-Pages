@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FrameFold — Privacy Policy</title>
+  <meta name="theme-color" content="#090a0f">
+  <link rel="icon" type="image/png" href="./assets/app-icon.png">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body data-page="privacy">
+  <div class="ambient-bg" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <div class="container nav-inner">
+      <a class="brand" href="./index.html">
+        <img src="./assets/app-icon.png" alt="FrameFold">
+        <span>FrameFold</span>
+        <span class="brand-badge">iOS 18+</span>
+      </a>
+
+      <nav class="nav-links" aria-label="Main navigation">
+        <a href="./index.html" data-i18n="nav_overview">Overview</a>
+        <a class="active" href="./privacy.html" data-i18n="nav_privacy">Privacy Policy</a>
+        <a href="./terms.html" data-i18n="nav_terms">Terms of Use</a>
+        <a href="./support.html" data-i18n="nav_support">Support</a>
+      </nav>
+
+      <div class="lang-picker-wrap">
+        <label for="lang-select" data-i18n="lang_label">Language</label>
+        <select id="lang-select" class="lang-select" aria-label="Language"></select>
+      </div>
+    </div>
+  </header>
+
+  <main class="container doc-shell">
+    <article class="glass-card doc-card">
+      <h1 data-i18n="priv_title">Privacy Policy</h1>
+      <div class="doc-meta" data-i18n="legal_updated">Effective Date: November 26, 2026 • Bundle ID: com.binego.framefold</div>
+
+      <div class="doc-section" style="border-top:none;margin-top:0;padding-top:0;">
+        <h2 data-i18n="priv_s1_t">1. 100% On-Device Media Processing</h2>
+        <p data-i18n="priv_s1_p">FrameFold inspects your videos and Live Photos strictly on your iPhone using Apple PhotoKit, AVFoundation, VideoToolbox, and Apple Vision. Your photos, videos, frame thumbnails, EXIF tags, GPS coordinates, and album lists are never uploaded to external servers.</p>
+      </div>
+
+      <div class="doc-section">
+        <h2 data-i18n="priv_s2_t">2. Photo Library &amp; Limited Access</h2>
+        <p data-i18n="priv_s2_p">FrameFold requests read/write access only so it can measure media sizes and save optimized files back to Photos. You can choose Selected Photos (.limited) at any time and manage shared assets directly inside FrameFold.</p>
+      </div>
+
+      <div class="doc-section">
+        <h2 data-i18n="priv_s3_t">3. Local Savings Ledger</h2>
+        <p data-i18n="priv_s3_p">Compression session history and reclaimed byte totals are stored solely in a local SQLite database inside your app sandbox. You can wipe that history at any time from Settings without affecting your Photos library.</p>
+      </div>
+
+      <div class="doc-section">
+        <h2 data-i18n="priv_s4_t">4. Advertising, GDPR/UMP &amp; Tracking (Free Tier Only)</h2>
+        <p data-i18n="priv_s4_p">The Free tier uses Google Mobile Ads and Google User Messaging Platform (UMP). In the EEA, UK, and Switzerland, UMP asks for your consent preferences first. Unless you explicitly grant App Tracking Transparency (ATT) permission, all ad requests enforce non-personalized ads (npa=1). If you are offline or unlock Lifetime Pro, zero ad requests are sent.</p>
+      </div>
+
+      <div class="doc-section">
+        <h2 data-i18n="priv_s5_t">5. StoreKit 2 Purchases</h2>
+        <p data-i18n="priv_s5_p">Lifetime Pro is processed directly by Apple through StoreKit 2. FrameFold never receives your payment card details or Apple Account credentials and caches only your cryptographic entitlement flag locally.</p>
+      </div>
+
+      <div class="doc-section">
+        <h2 data-i18n="priv_s6_t">6. EU GDPR &amp; Contact Rights</h2>
+        <p data-i18n="priv_s6_p">Under EU GDPR and Swiss FADP, you retain full control over consent, ad preferences (via Settings → Privacy &amp; Ad Preferences), and local storage. For privacy inquiries contact: support@binego.com.</p>
+      </div>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-links">
+        <a href="./index.html" data-i18n="nav_overview">Overview</a>
+        <a href="./privacy.html" data-i18n="nav_privacy">Privacy Policy</a>
+        <a href="./terms.html" data-i18n="nav_terms">Terms of Use</a>
+        <a href="./support.html" data-i18n="nav_support">Support</a>
+      </div>
+      <div class="footer-copy" data-i18n="footer_copy">© 2026 FrameFold (binego). All on-device media stays yours.</div>
+    </div>
+  </footer>
+
+  <script src="./i18n.js"></script>
+</body>
+</html>
